@@ -1,0 +1,73 @@
+  <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" width="300" height="300" type="image/png" href="https://img.icons8.com/color/48/000000/naruto-sign.png"> 
+     <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Unsplash Creator</title>
+  </head>
+  <body>
+      <!-- Header and Navigation Bar -->
+      <header>
+      <h1>Random Image Generator From Unsplash</h1>
+          <p>Thanks for coming, Your Effort Makes us Work More.</p>
+      </header>
+        
+      <div class="topnav">
+         <a>Home</a>
+          <a href="#howitworks">How It Works</a>
+            <a href="#about">About</a>
+        </div>
+      
+      
+      <!-- Input for User + Image Display -->
+      <!-- Input and Submit -->
+                <h3>Use Tag for Example like Bikes, Planes, Mountains</h3>
+      <p>Use More than 10 images to get nicely grid laid layout.   </p>
+      <div class="container">
+
+          <input type="number" id="noimages" placeholder="Number of Images You want to Get">
+<input type="text" placeholder="Type Tag for which you want images" id=
+"tags">
+      <button type="button" id="getimage">Get Images</button>
+</div>
+      <!-- Image Display -->
+      <div class="mutlicolumn" id="display">
+
+      </div>
+      <!-- How it Works Explanation -->
+      <div id="howitworks">
+          <h1>How it Works</h1>
+            <p> We Use Unsplash API to fetch random images based on tags user inputs</p>
+          <br>
+          <p>Let's See an Example</p><br>
+          <p>Say If you type Bikes,Cars,Celebrity,Planes,etc</p>
+          <br>
+          <p> Here's How it will look like</p>
+          <!-- Example Image Display -->
+               <div class="mutlicolumn" id="example">
+      </div>
+      </div>
+      <!-- About Section -->
+      <div id="about">
+          <!-- Header -->
+      <h1>About</h1>
+          <!-- Self Description -->
+          <div class="myself">
+          <p>Myself Sarvesh Hiwase, a Intermediate Web Developer and Programmer, a Computer Enthusiast willing to learn new technologies for fun projects.</p>
+          <p>
+              This is a small very fun project which uses <a href="https://unsplash.com/developers">Unsplash API </a> for random image generation. User input some keywords or tags and then User gets the images for that respective tag :)
+          </p>
+          </div>
+      </div>
+      
+      <!-- Javascript -->
+  <script  src="app.js" type="text/javascript"></script>
+  </body>
+</html>

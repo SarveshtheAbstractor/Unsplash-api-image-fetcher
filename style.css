@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans, sans-serif;
+}
+header,#howitworks,#about{
+    padding: 40px;
+    text-align: center;
+    background-color: #f1f1f1; 
+}
+#about{
+    background-color: lightgray;
+}
+.topnav{
+overflow: hidden;
+  background-color: #333;
+}
+.topnav a{
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.container{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  
+}
+input[type=text]{
+    padding: 10px;
+    width: 50%;
+    background-color: blanchedalmond;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    color: #757C96;
+}
+input[type=number]{
+    color: #757C96;
+    width: 80px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: blanchedalmond;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+h3{
+    color: #2A3B47;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+button{
+    margin-left: 10px;
+    outline: none;
+    background-color: rgb(18, 146, 238);
+    border: none;
+    color: white;
+    width: 100px;    
+    font-weight: bold;
+}
+.mutlicolumn{
+    background-color: #f1f1f1;
+    column-count: 3;
+    column-gap: 10px;
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;  
+}
+.mutlicolumn img{
+   width: 100%;
+}
+p{
+    text-align: center;
+    margin-top: 10px;
+}
+.myself{
+    border: 10px solid transparent;
+  padding: 15px;
+  border-image: url('images/border.png') 30 round;
+}
+.myself::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+    color: palevioletred;
+}
+.myself a{
+    text-decoration: none;
+    color: palevioletred;
+}
+.myself a:hover{
+    text-decoration: underline;
+}
+/* Media Queries For Responsiveness */
+@media screen and (max-width: 900px){
+        .mutlicolumn{
+        column-count: 2;
+        
+    }
+    
+}
+@media screen and (max-width : 600px){
+    .column1,.column2,.column3{
+        width: 100%;
+    }
+    .topnav a{
+        float: none;
+        text-align: center;
+    }
+    .mutlicolumn{
+        column-count: 1;
+    }
+    .mutlicolumn img{
+        margin-top: 20px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container input,button{
+        margin: auto;
+        margin-top: 20px;
+        width: 80%;
+    }
+    .container button{
+        height: 40px;
+    }
+}
