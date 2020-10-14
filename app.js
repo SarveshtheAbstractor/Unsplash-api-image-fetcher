@@ -14,7 +14,8 @@ document.getElementById('getimage').onclick = function(){
     } else {
          /*  <----------If user types more than 2 tags, gets an alert------>   */
         arr = inputtags.split(" ");
-        if(arr.length == 1){
+        arr1 = inputtags.split(",");
+        if(arr.length == 1 && arr1.length == 1){
         userinput = inputtags;
         /*  <----------When User has given some input (both No. and Tags)------>   */
         /*  <----------User Input ------>   */

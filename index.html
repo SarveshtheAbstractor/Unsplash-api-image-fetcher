@@ -20,7 +20,7 @@
       </header>
         
       <div class="topnav">
-         <a>Home</a>
+         <a href="#home">Home</a>
           <a href="#howitworks">How It Works</a>
             <a href="#about">About</a>
         </div>
@@ -28,11 +28,12 @@
       
       <!-- Input for User + Image Display -->
       <!-- Input and Submit -->
+      <div id="home">
                 <h3>Use Tag for Example like Bikes, Planes, Mountains</h3>
       <p>Use More than 10 images to get nicely grid laid layout.   </p>
       <div class="container">
 
-          <input type="number" id="noimages" placeholder="Number of Images You want to Get">
+          <input type="number" id="noimages" placeholder="Number of Images You want to Get" min="0">
 <input type="text" placeholder="Type Tag for which you want images" id=
 "tags">
       <button type="button" id="getimage">Get Images</button>
@@ -40,6 +41,7 @@
       <!-- Image Display -->
       <div class="mutlicolumn" id="display">
 
+      </div>
       </div>
       <!-- How it Works Explanation -->
       <div id="howitworks">

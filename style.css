@@ -89,7 +89,7 @@ p{
 .myself{
     border: 10px solid transparent;
   padding: 15px;
-  border-image: url('border.png') 30 round;
+  border-image: url('images/border.png') 30 round;
 }
 .myself::first-letter{
     font-size: 40px;
@@ -131,9 +131,10 @@ p{
     .container input,button{
         margin: auto;
         margin-top: 20px;
-        width: 80%;
+        width: 100%;
     }
     .container button{
         height: 40px;
+        border-radius: 5px;
     }
 }
