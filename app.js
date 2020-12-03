@@ -65,6 +65,7 @@ function renderItem(){
     
   
   fetch(`https://source.unsplash.com/1600x900/?${keyword[Math.floor(Math.random() * keyword.length)]}`).then((response) => {   
+      console.log(response);
       /*  <----------Creating Image Element------>   */
     let item = document.createElement('img');
       /*  <----------Giving Image Src from fetched api------>   */
